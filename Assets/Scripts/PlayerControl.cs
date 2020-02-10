@@ -32,7 +32,6 @@ public class PlayerControl : MonoBehaviour
                           + Vector3.ProjectOnPlane(relativeTransform.right, Vector3.up).normalized * horizontal) * (speed * Time.deltaTime);
         verticalMove = Vector3.up * rb.velocity.y;
 
-        Debug.Log(horizontalMove);
         rb.velocity = horizontalMove + verticalMove;
         #endregion
 
